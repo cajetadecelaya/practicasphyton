@@ -1,73 +1,73 @@
 
-# # ## Repetir  una palabra x veces
-# # palabra = input('Escribe una palabra cualquiera: ')
+## Repetir  una palabra x veces
+palabra = input('Escribe una palabra cualquiera: ')
 
-# # for i in range(20):   # esta funcion nos permite repetir la palabra la vees que se indique en el rango
-# #     print (palabra)
+for i in range(20):   # esta funcion nos permite repetir la palabra la vees que se indique en el rango
+    print (palabra)
 
 
-# # # Muestra años cumplido repetida la misma cantidad de veces
-# # edad = int(input('Ingrese edad: '))
+# Muestra años cumplido repetida la misma cantidad de veces
+edad = int(input('Ingrese edad: '))
 
-# # for i in range(edad): #L variable i toma el valos del ciclo qu ese vaya cumliento
-# #     print(f'Has compludo {i +1} años! ', end= '')
+for i in range(edad): #L variable i toma el valos del ciclo qu ese vaya cumliento
+    print(f'Has compludo {i +1} años! ', end= '')
 
-# # # Se pide un numero par y arrojara solo los numeros impares  contenidos separados por una coma
-# # numero = int(input('Ingrese numero entero: '))
+# Se pide un numero par y arrojara solo los numeros impares  contenidos separados por una coma
+numero = int(input('Ingrese numero entero: '))
 
-# # if (numero%2 )== 0:
-# #     for i in range(numero+1): #aqui definimosla cantidad de ciclos y se le agrega  un 1 para que la cuenta inicie desde el 1 y no el 0
-# #       if i % 2 != 0: #conficionamos a  que el residuo de la division de x numero entre 2  sea diferente a 0.
-# #         print(i, end=',') #imprime el numero inpar qu econtenga el numero qu eingresamos y se muestran separados por una coma.
-# # else:
-# #      print('No esta ingresando un numero par')
+if (numero%2 )== 0:
+    for i in range(numero+1): #aqui definimosla cantidad de ciclos y se le agrega  un 1 para que la cuenta inicie desde el 1 y no el 0
+      if i % 2 != 0: #conficionamos a  que el residuo de la division de x numero entre 2  sea diferente a 0.
+        print(i, end=',') #imprime el numero inpar qu econtenga el numero qu eingresamos y se muestran separados por una coma.
+else:
+     print('No esta ingresando un numero par')
 
-# # #     Se pide un numero par y arrojara solo los numeros impares cuenta regresiva contenidos separados por una coma
-# # numero= int(input('Ingrese numero entero: '))
+#     Se pide un numero par y arrojara solo los numeros impares cuenta regresiva contenidos separados por una coma
+numero= int(input('Ingrese numero entero: '))
 
-# # for i in range(numero+1):
-# #     print(numero, end=',')
-# #     numero -= 1 # aqui se le indica el decremento constante del valor inicial hasta el 0
+for i in range(numero+1):
+    print(numero, end=',')
+    numero -= 1 # aqui se le indica el decremento constante del valor inicial hasta el 0
 
-# # #
-# # cantidad_invertir= float(input('Ingrese el monto a unvertir: '))
-# # interes_anual = float(input('Ingrese el interes anual: '))
-# # numero_de_años = int(input('Ingrese años a invertir: '))
+#
+cantidad_invertir= float(input('Ingrese el monto a unvertir: '))
+interes_anual = float(input('Ingrese el interes anual: '))
+numero_de_años = int(input('Ingrese años a invertir: '))
 
-# # for i in range(numero_de_años):
-# #     cantidad_invertir = cantidad_invertir *(1+interes_anual)**numero_de_años
-# #     print(f'El capital obtenido del año {i+1} es de ${round(cantidad_invertir,3)} ')
+for i in range(numero_de_años):
+    cantidad_invertir = cantidad_invertir *(1+interes_anual)**numero_de_años
+    print(f'El capital obtenido del año {i+1} es de ${round(cantidad_invertir,3)} ')
 
-# # # ##    Imprimir * consecutivamente en forma de triangulo cuadrado
-# # numero_entero=int(input('Ingrese numero entero: '))
-# # for i in range(numero_entero+1):
-# #     print('*' * i, end='\n') # , end= '\n' se utiliza para el salto de linea
+# ##    Imprimir * consecutivamente en forma de triangulo cuadrado
+numero_entero=int(input('Ingrese numero entero: '))
+for i in range(numero_entero+1):
+    print('*' * i, end='\n') # , end= '\n' se utiliza para el salto de linea
 
-# # #    muestre las tablas de ultiplicar hasta el 10
-# # primero = 0
+#    muestre las tablas de ultiplicar hasta el 10
+primero = 0
 
-# # for i in range(10):
-# #     primero= primero+1
-# #     print(f'''
-# # Tabla de {primero}''')
-# #     for i in range(10):
-# #         print(f'{primero} * {i+1} = {(primero*(i+1))}')
+for i in range(10):
+    primero= primero+1
+    print(f'''
+Tabla de {primero}''')
+    for i in range(10):
+        print(f'{primero} * {i+1} = {(primero*(i+1))}')
         
-# # ####1  
-# # 3 1
-# # 5 3 1
-# # 7 5 3 1
-# # 9 7 5 3 1
-# # numero = int(input('Ingrese numero entero:'))   
+####1  
+3 1
+5 3 1
+7 5 3 1
+9 7 5 3 1
+numero = int(input('Ingrese numero entero:'))   
 
-# # for i in range(1,numero+1,2):#En este rango se indica a a partir de qu enumero se iniciara a contar, nuemro+1, la cantidad de veces qu ehara el ciclo y 2 que ira saltando de dos en dos numero.
-# #     for j in range(i, 0, -2):
-# #         print(j, end=' ')
-# #     print(' ')            
-# # else:
-# #      print('Este numero no es entero')
+for i in range(1,numero+1,2):#En este rango se indica a a partir de qu enumero se iniciara a contar, nuemro+1, la cantidad de veces qu ehara el ciclo y 2 que ira saltando de dos en dos numero.
+    for j in range(i, 0, -2):
+        print(j, end=' ')
+    print(' ')            
+else:
+     print('Este numero no es entero')
 
-# # # #### contraseña correcta
+# #### contraseña correcta
 
 password = input('Escribe tu contraseña: ')
 contraseña ='avion'
@@ -80,35 +80,35 @@ while password != contraseña:
         break
 print('Lo que sigue')    
 
-# ### Muestra que numero es primo y cual no
-# numero = int(input('Escribe un umero primo: '))
-# i =2
-# while numero % i != 0:  
-#    i +=1
-# if i == numero:
-#     print(f'El numero {numero} es primo!')
+### Muestra que numero es primo y cual no
+numero = int(input('Escribe un umero primo: '))
+i =2
+while numero % i != 0:  
+   i +=1
+if i == numero:
+    print(f'El numero {numero} es primo!')
     
 
-# else:
-#     print(f'El numero {numero} noes primo!')
+else:
+    print(f'El numero {numero} noes primo!')
 
-# #### impresion de palabra de letra en letra de anera decreciente.
-# palabra = input('Introduce palabra: ')
-# for i in range(len(palabra)-1,-1,-1): # con la funsion 'len(palabra)'definimos el numero de letras que contiene la palabra y se toma como valor de i. (-1,-1,-1) primer 1 define a partir de que numero comenzara la cuenta, segundo 1 da el valor inicial y tercer -1 indica de cuanto en cuanto seran los saltos. 
-#     print(palabra[i]) #imprimira la posicion de la letra dentro de la palabra indicada por la variable i.
+#### impresion de palabra de letra en letra de anera decreciente.
+palabra = input('Introduce palabra: ')
+for i in range(len(palabra)-1,-1,-1): # con la funsion 'len(palabra)'definimos el numero de letras que contiene la palabra y se toma como valor de i. (-1,-1,-1) primer 1 define a partir de que numero comenzara la cuenta, segundo 1 da el valor inicial y tercer -1 indica de cuanto en cuanto seran los saltos. 
+    print(palabra[i]) #imprimira la posicion de la letra dentro de la palabra indicada por la variable i.
 
-# #### Mostrar cantidad de veces de una letra se repita en una frase.
-# frase = input('Ingrese palabra. ')
-# letra = input('seleccione letra: ')
-# contador = 0
-# for i in frase: #el contrador recorrera letra por letra y el numero que cale que seria 5 veces.
-#     if i == letra:
-#         contador += 1
+#### Mostrar cantidad de veces de una letra se repita en una frase.
+frase = input('Ingrese palabra. ')
+letra = input('seleccione letra: ')
+contador = 0
+for i in frase: #el contrador recorrera letra por letra y el numero que cale que seria 5 veces.
+    if i == letra:
+        contador += 1
     
-# print(f'{letra} aparece {contador} veces en la frase')       
+print(f'{letra} aparece {contador} veces en la frase')       
 
-### eco constante de palabra ingresada hasta que se singrese la palabra salir
-# while  True:
-#     palabra = input('Ingrese palabra: ')
-#     if palabra == 'salir':
-#         break
+## eco constante de palabra ingresada hasta que se singrese la palabra salir
+while  True:
+    palabra = input('Ingrese palabra: ')
+    if palabra == 'salir':
+        break
