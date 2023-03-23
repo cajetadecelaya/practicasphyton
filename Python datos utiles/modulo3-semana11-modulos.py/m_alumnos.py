@@ -1,10 +1,4 @@
-#Utilizar al menos 2 funciones
-#pregiuntar cuanto alumnos se registraran en caso de no ingresar un na cantidad se asume que se registraran 3 alumnos
-#preguntar el nomte de 2 calificaciones
-#Mostrar el nombte en pantalla con inicial mayusculas y promedio
-#Al finalizar el programa se mostrara una lista con el nombre de cada alumno y sus calificaciones
-
-
+###m_alumnos.py
 def captura_alumnos(numero=3):
     """Funcion que registra alumos y dos calificaciones, recibe como parametro la cantidad de alumnos
     a registrar, si no se especifica el numero de alumnos , se registraran 3"""

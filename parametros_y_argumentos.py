@@ -1,9 +1,9 @@
-# def sumar(parametro1, parametro2):
+#  def sumar(parametro1, parametro2):
 #     """Funcion que suma dos parametros y los imrpime en pantalla"""
-#     print('suma:', parametro1 +parametro2)
+#      print('suma:', parametro1 +parametro2)
 
-# argumento1 = 5
-# argumento2 = 7
+#  argumento1 = 5
+# # argumento2 = 7
 
 #invocando a la funcion por medio de parametros variables
 #sumar(argumento1,argumento2)

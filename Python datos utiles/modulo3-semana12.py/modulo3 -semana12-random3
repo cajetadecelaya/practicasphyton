@@ -1,0 +1,7 @@
+import numpy as np
+
+#np.random.seed(0)# esta sentencias  indica qeu el numero random sea constante
+
+numeros = np.random.random(10)# se genera un numero aleatorio
+
+print(numeros)

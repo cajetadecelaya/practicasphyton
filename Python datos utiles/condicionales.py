@@ -133,3 +133,6 @@
 #     else:
 #      print('Opcion no valida')
 
+palabra = 'chango'
+for i in range(len(palabra) -1,-1,-1): # con la funsion 'len(palabra)'definimos el numero de letras que contiene la palabra y se toma como valor de i. (-1,-1,-1) primer 1 define a partir de que numero comenzara la cuenta, segundo 1 da el valor inicial y tercer -1 indica de cuanto en cuanto seran los saltos. 
+    print(palabra[i], end='') #imprimira la posicion de la letra dentro de la palabra indicada por la variable i.
